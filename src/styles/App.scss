@@ -3,7 +3,70 @@
     margin: 0;
 }
 
+body{
+    background-color: black;
+}
+.header{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+justify-content: center;
+
+    &__img{
+      width: 400px;
+  
+      
+    }
+}   
+
+.main{
+    margin: 20px;
+    color: #13a5bf;
+    
+
+    }
+
+.form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
+        width: 200px;
+        font-size: 24px;
+        text-align: center;
+
+       
+    }
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    }
+
+.input{
+    border: 2px solid #13a5bf;
+    padding: 10px;
+    text-align: center;
+ 
+}
 
 .img{
     width: 150px;
 }
+.cards{
+    background-color:#13a5bf;
+    color: white;
+    width: 150px;
+    margin: 20px;
+}
+.text-cards{
+    padding: 5px;
+    text-align: center;
+}
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+

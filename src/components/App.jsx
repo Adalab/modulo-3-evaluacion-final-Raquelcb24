@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import CharacterList from "./CharacterList";
 import FilterByName from "./FilterByName";
+import logo from '../images/title.png'
 
 function App() {
 
@@ -26,8 +27,16 @@ function App() {
 
   return (
     <>
-      <FilterByName inputChange={inputChange}/>
-      <CharacterList listCharacters={filteredCharacters}/>
+      <header className="header">
+        <img className="header__img" src={logo} alt="Logo Rick and Morty" />
+      </header>
+
+      <main className="main">
+        <FilterByName inputChange={inputChange}/>
+        <CharacterList listCharacters={filteredCharacters}/>
+
+      </main>
+      
     </>
   )
 }
