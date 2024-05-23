@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom"
 
 
+
 function CharacterDetail({detail}) {
 
-  return ( detail ? 
-        <section >
-           <Link to="/"><button className="button">Volver</button></Link>
+
+  return ( 
+        <section className="section">
+            <div className="button_container">
+                <Link to="/"><button className="button">Volver</button></Link>
+            </div>
+          
             <article className="filtered">
                 <img className="filtered__img" src={detail.image} alt="Character image" />
                 <div className="filtered__text-cards">
@@ -17,7 +22,7 @@ function CharacterDetail({detail}) {
                 </div> 
             </article>
         </section>
-         : <p className="not-found">Personaje no encontrado</p>
+         
         
        
   )

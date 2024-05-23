@@ -39,7 +39,7 @@ const characterIdUrl = characterRoute ? characterRoute.params.id : null;
  const characterId = parseInt(characterIdUrl, 10);
  const detail = listCharacters.find(character => character.id === characterId);
  //busca en la lista de personajes el id que coincida con el id de la url donde estoy
-console.log(detail)
+
 
 
 
@@ -59,7 +59,7 @@ console.log(detail)
             </main>
 
           }/>
-          <Route path="/detail/:id" element={<CharacterDetail   detail={detail} listCharacters={listCharacters} />
+          <Route path="/detail/:id" element={<CharacterDetail   detail={detail}/>
           } />
           <Route path="*" element={<h2 className="not-found"> Pagina no encontrada</h2>} />
 
