@@ -8,10 +8,12 @@ import logo from '../images/title.png'
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
 
+
 function App() {
 
   const [listCharacters, setListCharacter] = useState([]) //es un array porque es un listado
   const [filterName, setFilterName] = useState("")
+
 
   useEffect(()=>{ //ejecuto mi funcion donde hago fetch y modifico mi variable de estado con esos datos de la api
     getDataFromApi().then((arrayData)=>{
@@ -27,7 +29,9 @@ function App() {
   };
 
   const filteredCharacters = listCharacters.filter((item)=>item.name.toLowerCase().includes(filterName)
-);
+)
+
+
 
 const {pathname} = useLocation() //cojo con destructuring la propiedad que quiero. Pathname me da la ruta del id del personaje
 const characterRoute = matchPath("/detail/:id", pathname) //funcion que me compara las rutas. Recibe dos parametros, la ruta que quiero buscar y en la que estoy guardado en pathname
@@ -51,10 +55,11 @@ const characterIdUrl = characterRoute ? characterRoute.params.id : null;
       <Routes>
           <Route path="/" element={
             <main className="main">
-
+             
                 <FilterByName inputChange={inputChange} value={filterName}/>
 
                 {filteredCharacters.length === 0 ? (<p className="not-found">No hay ninguna coincidencia con {filterName}</p>) : ( <CharacterList listCharacters={filteredCharacters}/>)}
+          
              
             </main>
 
