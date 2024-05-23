@@ -1,6 +1,11 @@
 
 
-function FilterByName({inputChange}) {
+function FilterByName({inputChange, value}) {
+  const handleKeyDown =(event)=>{
+    if(event.key === "Enter"){
+      event.preventDefault();
+    }
+  }
     
   return (
     <form className="form">
@@ -9,7 +14,9 @@ function FilterByName({inputChange}) {
         name="name"
         id="name"
         placeholder="Nombre del personaje"
+        value={value}
         onChange={inputChange}
+        onKeyDown={handleKeyDown}
         />
     </form>
   )

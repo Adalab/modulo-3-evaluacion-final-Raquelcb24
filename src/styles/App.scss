@@ -69,4 +69,36 @@ justify-content: center;
     gap: 20px;
     padding: 20px;
   }
+.filtered{
+    background-color:#13a5bf;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+   
 
+    &__img{
+        margin: 20px;
+        width: 200px;
+        padding-left: 20px;
+        
+        
+    }
+    &__text-cards{
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    
+}
+.not-found{
+    font-size: 20px;
+    text-align: center;
+    padding: 100px;
+}

@@ -1,16 +1,24 @@
+import { Link } from "react-router-dom"
 
 
-function CharacterDetail() {
-  return (
-    <article>
-        <img className="img" src={info.image} alt="Character image" />
-        <h3>{info.name}</h3>
-        <p>Status: {info.status}</p>
-        <p>Species: {info.specie}</p>
-        <p>Origin: {info.origin}</p>
-        <p>Episodes: {info.episode}</p>
-
-  </article>
+function CharacterDetail({detail}) {
+  const episodeAcc = detail.episode.length;
+  return ( detail ? 
+        <section >
+           <Link to="/"><button className="button">Volver</button></Link>
+            <article className="filtered">
+                <img className="filtered__img" src={detail.image} alt="Character image" />
+                <div className="filtered__text-cards">
+                    <h3>{detail.name}</h3>
+                    <p>Status: {detail.status}</p>
+                    <p>Species: {detail.specie}</p>
+                    <p>Origin: {detail.origin}</p>
+                    <p>Episodes: {episodeAcc}</p> 
+                </div> 
+            </article>
+        </section>
+     
+      : <p className="not-found">Personaje no encontrado</p>
   )
 }
 
