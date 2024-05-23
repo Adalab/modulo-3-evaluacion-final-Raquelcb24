@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 
 function CharacterDetail({detail}) {
 
-
+console.log(detail)
   return ( 
+    detail ? (
         <section className="section">
             <div className="button_container">
                 <Link to="/"><button className="button">Volver</button></Link>
             </div>
-          
             <article className="filtered">
                 <img className="filtered__img" src={detail.image} alt="Character image" />
                 <div className="filtered__text-cards">
@@ -21,11 +21,11 @@ function CharacterDetail({detail}) {
                     <p>Episodes: {detail.episode}</p> 
                 </div> 
             </article>
-        </section>
-         
-        
-       
+    </section>
+     ) : <p className="not-found">Página no encontrada</p>
+    
   )
+ 
 }
 
 export default CharacterDetail
