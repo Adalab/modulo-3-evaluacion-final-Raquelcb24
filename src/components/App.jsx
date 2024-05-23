@@ -59,7 +59,7 @@ console.log(detail)
             </main>
 
           }/>
-          <Route path="/detail/:id" element={<CharacterDetail   detail={detail} />
+          <Route path="/detail/:id" element={<CharacterDetail   detail={detail} listCharacters={listCharacters} />
           } />
           <Route path="*" element={<h2 className="not-found"> Pagina no encontrada</h2>} />
 

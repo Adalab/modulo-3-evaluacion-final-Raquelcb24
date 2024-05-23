@@ -12,7 +12,7 @@ const getDataFromApi = ()=>{
                 specie: user.species,
                 origin: user.origin.name,
                 image: user.image,
-                episode: user.episode,
+                episode: user.episode.length,
                 //cojo todos los elementos que voy a necesitar sacar
             };
         });
