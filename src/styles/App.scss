@@ -4,6 +4,7 @@
     box-sizing: border-box; 
 }
 
+
 body{
     background-color: black;
    
@@ -49,9 +50,18 @@ body{
 
 .input{
     border: 2px solid #13a5bf;
+    color: white;
     padding: 10px;
     text-align: center;
     font-family: "Creepster", system-ui;
+    border: 4px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    padding: 10px;
+    text-align: center;
+    font-family: "Creepster", system-ui;
+  
+    font-size: 20px;
 }
 
 .img{
@@ -138,6 +148,31 @@ body{
     padding: 100px;
     font-family: "Creepster", system-ui;
 }
+
+.select-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.select{
+    border: 4px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Creepster", system-ui;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+
+
+
 @media screen and (min-width: 780px) {
     .filtered {
         flex-direction: row;
