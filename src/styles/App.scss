@@ -111,21 +111,24 @@ body{
 }
 
 .button-container {
+ 
     align-self: flex-start; 
     margin-bottom: 20px; 
   
    
 }
 .button{
+  
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     border: 5px solid #56a241;
     background-color: #07B0C6;
+    cursor: pointer;
     color: white;
     font-size: 18px;
     font-family: "Creepster", system-ui;
-    
+   
   
 }
 
@@ -138,6 +141,12 @@ body{
 @media screen and (min-width: 780px) {
     .filtered {
         flex-direction: row;
+        &__img{
+            margin: 20px;
+            width: 200px;
+           
+            
+        }
 }
 
 }
