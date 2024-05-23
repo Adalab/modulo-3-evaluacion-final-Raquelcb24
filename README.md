@@ -1,8 +1,6 @@
-# React + Vite
+# Rick and Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Evaluación Módulo 3 de React. 
+En este ejercicio podemos encontrar un listado de personajes de la serie Rick and Morty. 
+Se puede filtrar por nombre, y aparecerán los personajes que contentan las letras escritar, por orden.
+Si se selecciona un personaje, se abrirá una ruta dinámica que mostrará más detalles del personaje seleccionado
