@@ -1,6 +1,5 @@
-# Rick and Morty
+# Rick and Morty character finder
+!Rick and Morty]([url completa de la imagen](https://i.pinimg.com/564x/93/93/82/939382a22dc96f1d224614978b3c3e70.jpg))
 
-Evaluación Módulo 3 de React. 
-En este ejercicio podemos encontrar un listado de personajes de la serie Rick and Morty. 
-Se puede filtrar por nombre, y aparecerán los personajes que contentan las letras escritar, por orden.
-Si se selecciona un personaje, se abrirá una ruta dinámica que mostrará más detalles del personaje seleccionado
+Find your favourite Rick & Morty characters here!
+You can filter by name, status and species.
