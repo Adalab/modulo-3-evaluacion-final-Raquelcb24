@@ -4,7 +4,6 @@ import getDataFromApi from "../services/api";
 import { useEffect, useState } from "react";
 import CharacterList from "./CharacterList";
 import FilterByName from "./FilterByName";
-
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 import CharacterDetail from "./CharacterDetail";
 import FilterByStatus from "./FilterByStatus";
@@ -120,7 +119,7 @@ const characterIdUrl = characterRoute ? characterRoute.params.id : null;
           <Route path="*" element={<h2 className="not-found"> Pagina no encontrada</h2>} />
 
       </Routes>
-      
+     
       
     </>
   )
