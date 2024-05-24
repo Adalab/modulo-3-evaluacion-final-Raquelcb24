@@ -6,144 +6,192 @@
 
 
 body{
-    background-color: black;
-   
+
+    background-image: url("https://i.pinimg.com/564x/f9/b3/e3/f9b3e35c7a2ae4402a9a805ad14fe042.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    
+  
 }
 
 .header{
-    margin: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgba(0, 144, 110, 0.4);
     display: flex;
     justify-content: center;
   
 
     &__img{
-      width: 300px;
+      width: 70vw;
     }
 }   
 
 .main{
-    margin: 20px;
+   
+   
     color: var(--border-color);
-    
+ 
 
     }
 
 .form{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         margin: 0 auto 20px auto;
         width: 200px;
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
+        margin-top: 80px;
 
        
     }
-.label {
-    margin-bottom: 10px;
-    font-size: 38px;
-    font-family: "Creepster", system-ui;
-    color: var(--color-blue);
-    }
+
 
 .input{
-    border: 2px solid var(--border-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-family: "Creepster", system-ui;
-    border: 4px solid var(--border-color);
-    border-radius: 10px;
-    background-color: var(--color-blue);
-    padding: 10px;
-    text-align: center;
-    font-family: "Creepster", system-ui;
-  
-    font-size: 20px;
-}
-
-.img{
-    width: 150px;
-}
-.cards{
-    background-color: var(--color-blue);
-    color: white;
-    width: 150px;
-    margin: 20px;
-
  
+    border: solid 3px var(--border-color);
+    background-color: rgba(7, 176, 198, 0.5);
+    text-align: center;
+    width: 220px;
+    color: white;
+    border-radius: 10px;
+    font-family: "Creepster", system-ui;
+    font-size: 18px;
+    
+}
+
+
+.cards{
+
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(7, 176, 198, 0.5);
+ 
+}
+.cards a{
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    border-radius: 50%;
+    width: 150px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+    height: fit-content;
+    margin: 5px;
+    align-self: center;
 }
 .text-cards{
     padding: 5px;
     text-align: center;
     font-family: "Creepster", system-ui;
-    font-size: 20px;
+    font-size: 18px;
 }
 .character-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
+  
   }
 
 .filtered{
-    background-color:var(--color-blue);
+    background-color: rgba(7, 176, 198, 0.5);
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
+    margin-right: 10px;
     border-radius: 10px;
     border: 5px solid var(--border-color);
- 
+    align-self: center;
 
     &__img{
         margin-top: 20px;
-        width: 200px;
-       
+        width: 150px;
+        border-radius: 25px;
+       align-items: center;
         
     }
     &__text-cards{
         text-align: center;
-        font-size: 24px;
+        font-size: 18px;
         padding: 10px;
     }
 }
+
 .section{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     font-family: "Creepster", system-ui;
+    position: relative;
+  
  
+}
+.section-filter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-family: "Creepster", system-ui;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button-container{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
-.button-container {
- 
-    align-self: flex-start; 
-    margin-bottom: 20px; 
-  
-   
-}
 .button{
-  
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 5px solid var(--border-color);
-    background-color: var(--color-blue);
-    cursor: pointer;
+    border: solid 3px var(--border-color);
+    background-color: rgba(7, 176, 198, 0.5);
+    text-align: center;
+    width: 100px;
     color: white;
-    font-size: 18px;
+    border-radius: 10px;
     font-family: "Creepster", system-ui;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
    
-  
+} 
+
+
+.reset{
+   
+    border: solid 3px var(--border-color);
+    background-color: rgba(7, 176, 198, 0.5);
+    text-align: center;
+    width: 220px;
+    color: white;
+    border-radius: 10px;
+    font-family: "Creepster", system-ui;
+    font-size: 18px;
 }
 
 .not-found{
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
     padding: 100px;
     font-family: "Creepster", system-ui;
+    color: var(--color-blue);
 }
 
 .select-container{
@@ -156,29 +204,99 @@ body{
     
 }
 .select{
-    border: 4px solid var(--border-color);
-    border-radius: 10px;
-    background-color: var(--color-blue);
-    color: white;
-    padding: 10px;
+   
+    border: solid 3px var(--border-color);
+    background-color: rgba(7, 176, 198, 0.5);
     text-align: center;
+    width: 220px;
+    color: white;
+    border-radius: 10px;
     font-family: "Creepster", system-ui;
-    margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 18px;
+
+}
+
+.links{
+    color: white;
+    text-decoration: none;
 }
 
 
-
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .filtered {
         flex-direction: row;
         &__img{
             margin: 20px;
             width: 200px;
-           
             
         }
+
+    }
+.header{
+    &__img{
+        width: 60%;
+    }
 }
 
+.form{
+    margin-top: 150px;
+    
 }
+.button{
+    font-size: 24px;
+}
+.section-filter{
+    margin-top: 600px;
+}
+.filtered{
+    width: 600px;
+    &__img{
+        width: 200px;
+    }
+    &__text-cards{
+        font-size: 28px;
+    }
+}
+
+.section-filter{
+    margin-top: 450px;
+}
+}
+@media screen and (min-width: 1024px) {
+    .filtered {
+        flex-direction: row;
+        &__img{
+            margin: 20px;
+            width: 200px;
+            
+        }
+
+    }
+    .header{
+        &__img{
+            width: 40%;
+        }
+    }
+
+.form{
+    margin-top: 200px;
+    
+}
+.button{
+    font-size: 30px;
+}
+.section-filter{
+    margin-top: 600px;
+}
+.filtered{
+    width: 800px;
+    &__img{
+        width: 400px;
+    }
+    &__text-cards{
+        font-size: 34px;
+    }
+}
+}
+
+  

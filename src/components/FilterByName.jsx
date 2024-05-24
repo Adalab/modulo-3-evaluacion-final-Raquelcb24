@@ -8,17 +8,17 @@ function FilterByName({inputChange, value}) {
   }
     
   return (
-    <form className="form">
-        <label className="label" htmlFor="name">Busca tu personaje favorito</label>
+    <div className="form">
+       
         <input className="input" type="text" 
         name="name"
         id="name"
-        placeholder="Nombre del personaje"
+        placeholder="Search by name"
         value={value}
         onChange={inputChange}
         onKeyDown={handleKeyDown}
         />
-    </form>
+    </div>
   )
 }
 

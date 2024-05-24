@@ -8,10 +8,10 @@ function FilterByStatus({ setFilterStatus, filterStatus }) {
     return (
       <div className="select-container">
         <select className="select" name="status" id="status" onChange={handleChange} value={filterStatus}>
-          <option value="all">Todos</option>
-          <option value="alive">Vivo</option>
-          <option value="dead"> Muerto</option>
-          <option value="unknown">Desconocido</option>
+          <option value="all">Dead or alive</option>
+          <option value="alive">Alive</option>
+          <option value="dead"> Dead</option>
+          <option value="unknown">Unknown</option>
         </select>
       </div>
     );
