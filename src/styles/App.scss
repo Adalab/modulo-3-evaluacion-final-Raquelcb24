@@ -22,13 +22,13 @@ body{
     left: 0;
     width: 100vw;
     z-index: 1000;
-    background-color: rgb(107, 66, 134, 0.4);
+    
     display: flex;
     justify-content: center;
   
 
     &__img{
-      width: 70vw;
+      width: 80%;
     }
 }   
 
@@ -274,7 +274,7 @@ body{
     }
     .header{
         &__img{
-            width: 40%;
+            width: 30%;
         }
     }
 
